@@ -675,6 +675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b513ebba3dc984a8d96f0e4be5e513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 0}
+  pitchMinMax: {x: -90, y: 90, z: 0}
 --- !u!1 &1057377673
 GameObject:
   m_ObjectHideFlags: 0
