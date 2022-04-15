@@ -24,12 +24,9 @@ public abstract class Target : MonoBehaviour
 
     //used to set speed and bounds of the target, taking all of the above variables
     protected abstract void Setxy();
-  
+
     //destroys arrows when they hit the target
-    private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(collision.gameObject);
-    }
+    
 
     //moves the target
     protected void Move()
