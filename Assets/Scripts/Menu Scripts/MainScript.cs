@@ -12,7 +12,7 @@ public class MainScript : MonoBehaviour
     public Text restartText;
 
 
-    public float countdown = 10;
+    public float countdown = 30;
     public static bool gameOver = false;
     
     // Start is called before the first frame update
@@ -50,7 +50,7 @@ public class MainScript : MonoBehaviour
         {
             arrow.points = 0;
             gameOver = false;
-            countdown = 10;
+            countdown = 30;
             restartText.gameObject.SetActive(false);
             gameOverText.gameObject.SetActive(false);
         }
