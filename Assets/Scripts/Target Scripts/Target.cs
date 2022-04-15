@@ -31,7 +31,11 @@ public abstract class Target : MonoBehaviour
     //moves the target
     protected void Move()
     {
-        transform.Translate(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime, 0);
+        if (!MainScript.gameOver)
+        {
+            transform.Translate(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime, 0);
+        }
+        
     }
 
 }

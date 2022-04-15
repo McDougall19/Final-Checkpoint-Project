@@ -17,7 +17,11 @@ public class MovePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (!MainScript.gameOver)
+        {
+            Move();
+        }
+       
 
         //prevents players from going past the walls
         if (transform.position.x > rightBound)
